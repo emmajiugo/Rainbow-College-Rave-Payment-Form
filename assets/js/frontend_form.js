@@ -179,7 +179,7 @@
 			// $("#StudentName").val("John Doe");
 			// $("#StudentClass").val("Primary 1");
 
-			if (studentId.length == 6) {
+			if (studentId.length == 7) {
 
 				$.post($form.attr('action'), {
 					'action':'kkd_pff_rave_select_student',
