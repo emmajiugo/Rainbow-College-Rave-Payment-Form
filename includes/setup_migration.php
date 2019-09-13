@@ -51,7 +51,11 @@ class Kkd_Pff_Rave_Setup_Migration {
 
 		// table cobtaining student details
 		$table_name = $wpdb->prefix . KKD_PFF_RAVE_STUDENT_TABLE;
+		// drop the table from the database.
+		$wpdb->query( "DROP TABLE IF EXISTS $table_name" );
 		
+		$table_name = $wpdb->prefix . KKD_PFF_RAVE_STUDENT_TABLE;
+
 		$sql = "CREATE TABLE IF NOT EXISTS  `".$table_name."` (
 			id int(11) NOT NULL AUTO_INCREMENT,
 		  	student_id varchar(255) DEFAULT '' NOT NULL,
@@ -66,7 +70,5 @@ class Kkd_Pff_Rave_Setup_Migration {
 		dbDelta($sql);
 
 	}
-
-
 
 }

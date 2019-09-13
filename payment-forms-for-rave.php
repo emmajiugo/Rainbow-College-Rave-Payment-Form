@@ -3,7 +3,7 @@
 	Plugin Name:	Rave Payment forms for Schools (Rainbow College)
 	Plugin URI: 	https://rave.flutterwave.com
 	Description: 	Rave payment form for Rainbow College & Pampers College.
-	Version: 		1.3.1
+	Version: 		1.3.2
 	Author: 		Flutterwave Developers
 	Author URI: 	https://rave.flutterwave.com
 	License:        GPL-2.0+
